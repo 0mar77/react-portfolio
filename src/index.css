@@ -90,10 +90,6 @@ span {
     position: relative;
 }
 
-.project-pics:hover {
-    opacity: 0.2;
-}
-
 .card-info {
     position: absolute;
     bottom: 15%;
