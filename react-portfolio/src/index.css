@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #222629;
+    color: #86C232;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+a {
+    color: #86C232;
+    text-decoration: none;
+} 
+
+a:hover {
+    color: #61892F;
+}
+
+.flex-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    margin: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    height: 120px;
+    width: 135px;
+    border-radius: 60px;
+    border: solid #86C232;
+}
+
+p {
+    text-align: center;
+    margin-top: 80px;
+    font-size: x-large;
+}
+
+.portfolio-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.project-pics {
+    height: 400px;
+    width: 500px;
+    border: solid #86C232;
+}
+
+h3 {
+    font-size: xx-large;
+}
+
+span {
+    margin-top: 15px;
+}
+
+.project-card {
+    position: relative;
+}
+
+.project-pics:hover {
+    opacity: 0.2;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 15%;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: #222629;
+    border: solid #86C232;
+}
+
+#btn {
+    margin-top: 10px;
+    background-color: #86C232;
+    width: 175px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: #61892F;
+}
+
+.resume-ul {
+    margin: 20px;
+}
+
+footer {
+    background-color: #222629;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;    
+}
+
+.body {
+    color: #86C232;
+}
+
+.main {
+    height: 800px; 
+}
+
+.card-info:hover {
+    background-color: #222629;
+}
+
+
+@media only screen and (max-width: 840px) {
+    header {
+        flex-direction: column;
+    }
 }
